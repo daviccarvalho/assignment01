@@ -1,6 +1,6 @@
 {
   "name": "assignment1",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
@@ -20,18 +20,5 @@
     "jquery": "^3.6.0",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  },
-  "description": "Assignment 01 - COMP229 - Summer 2021",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/daviccarvalho/assignment01.git"
-  },
-  "author": "Davi Carvalho",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/daviccarvalho/assignment01/issues"
-  },
-  "homepage": "https://github.com/daviccarvalho/assignment01#readme"
+  }
 }
