@@ -4,37 +4,41 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', 
-  { title: 'Home'});
+  { title: 'Home', h1: 'my portfolio page'});
 });
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
   res.render('index', 
-  { title: 'Home'});
+  { title: 'Home', h1: 'my portfolio page'});
 });
 
 /* GET About me page. */
 router.get('/about', function(req, res, next) {
   res.render('index', 
-  { title: 'About me'});
+  { title: 'About me',
+    h1: 'Main Heading'});
 });
 
 /* GET Projects page. */
 router.get('/projects', function(req, res, next) {
   res.render('index', 
-  { title: 'Projects'});
+  { title: 'Projects',
+    h1: 'Main Heading'});
 });
 
 /* GET Services page. */
 router.get('/services', function(req, res, next) {
   res.render('index', 
-  { title: 'Services'});
+  { title: 'Services',
+    h1: 'Main Heading'});
 });
 
 /* GET Contact me page. */
 router.get('/contact', function(req, res, next) {
   res.render('index', 
-  { title: 'Contact me'});
+  { title: 'Contact me',
+    h1: 'Main Heading'});
 });
 
 module.exports = router;
