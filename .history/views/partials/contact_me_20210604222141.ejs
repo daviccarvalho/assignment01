@@ -5,7 +5,7 @@
     <div class="w-75 p-3 mx-auto">
 
       <div class="card mx-auto" style="width: 18rem;">
-        <img src="/Assets/images/qr_code.png" class="card-img-top" alt="...">
+        <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Contact</h5>
           <p class="card-text">Phone: +55.98.981.574.273<br>
@@ -15,7 +15,7 @@
           </div>
       </div>
 
-    <form>
+    <form action="javascript:alert( 'success!' );">
     <h5>Do you want to get in touch with me? Please, inform your contacts and a brief description of what you need. I will answer as soon as possible.<h5>
       <div class="mb-3">
         <div class="row g-3 align-items-center">
@@ -63,10 +63,22 @@
       
           <div id="disclaimer" class="form-text">We'll never share your information with anyone else.</div>
         
-        <button id="btnSubmit" type="submit" class="btn btn-primary" onclick="window.open('/home', '_self');">Submit</button>
+        <button id="btnSubmit" type="submit" class="btn btn-primary">Submit</button>
       </div>
     </form>
     </div>
   </div>
   </div>
+  <script>
+$( "form" ).submit(function( event ) {
+  if ( $( "input" ).first().val() === "correct" ) {
+    $( "span" ).text( "Validated..." ).show();
+    return;
+  }
+ 
+  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+  event.preventDefault();
+});
+
+  </script>
 </main>

@@ -5,7 +5,7 @@
     <div class="w-75 p-3 mx-auto">
 
       <div class="card mx-auto" style="width: 18rem;">
-        <img src="/Assets/images/qr_code.png" class="card-img-top" alt="...">
+        <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Contact</h5>
           <p class="card-text">Phone: +55.98.981.574.273<br>
@@ -63,10 +63,18 @@
       
           <div id="disclaimer" class="form-text">We'll never share your information with anyone else.</div>
         
-        <button id="btnSubmit" type="submit" class="btn btn-primary" onclick="window.open('/home', '_self');">Submit</button>
+        <button id="btnSubmit" type="submit" class="btn btn-primary">Submit</button>
       </div>
     </form>
     </div>
   </div>
   </div>
+  <script>
+    let pressButton = document.getElementsById("btnSubmit")[0];
+
+    pressButton.addEventListener("click", function (event) {
+      alert("Information submitter. Thank you!")
+    })
+
+  </script>
 </main>
